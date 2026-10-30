@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мафія: Ігри Дорослих</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="logo.jpg" alt="Логотип гри" class="logo">
+        <div class="nav-links">
+            <a href="#" data-i18n="nav_home">Головна</a>
+            <a href="#" data-i18n="nav_news">Новини</a>
+            <a href="#" data-i18n="nav_download">Завантажити гру</a>
+        </div>
+
+        <select id="lang-select" class="lang-select" aria-label="Language">
+            <option value="uk">Українська</option>
+            <option value="en">English</option>
+            <option value="pl">Polski</option>
+            <option value="de">Deutsch</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="it">Italiano</option>
+        </select>
+    </nav>
+
+    <main>
+        <header class="hero">
+            <h1 data-i18n="h1">Мафія: Ігри Дорослих</h1>
+            <p data-i18n="hero1">Поринь у світ мафії, таємниць і небезпечних рішень!</p>
+            <p data-i18n="hero2">Обирай свою роль, розкривай таємниці та доведи, що саме ти керуєш грою!</p>
+        </header>
+
+        <section class="block">
+            <h2 data-i18n="about_title">Про гру</h2>
+            <p data-i18n="about_text">Мафія: Ігри Дорослих — онлайн-мафія, де кожна ніч може стати останньою. Місто засинає. Прокидається мафія.</p>
+            <p data-i18n="adout_text_1">Багатокористувацька мафія для телефона та комп'ютера. Створіть кімнату, покличте друзів або знайдіть партію в лобі, і нехай переможе наймудріший. Або найчесніший.</p>
+        </section>
+        <section class="block">
+            <h2 data-i18n="about_title_1">Як минає партія</h2>
+            <p data-i18n="about_text_night">🌙 Ніч. Мафія таємно обирає жертву, а Комісар, Лікар та інші ролі використовують свої здібності.</p>
+            <p data-i18n="adout_text_day">☀️ День. Місто прокидається й дізнається, кого не стало. Починається обговорення: хто бреше, хто захищає своїх, хто надто мовчазний?</p>
+            <p data-i18n="aboyt_text_voting">⚖️ Голосування. Місто вирішує, кого вигнати. Помилка може коштувати мирним перемоги.</p>
+        </section>
+
+        <section class="block">
+           <h2 data-i18n="roles_title">Ролі</h2>
+        <div class="cards">
+            <div class="card">
+                 <h3 data-i18n="mafia_name">Мафія</h3>
+                  <div class="pair">
+                     <figure>
+                        <img src="images/mafia-m.jpg" alt="Мафія, чоловічий образ">
+                        <figcaption>Він</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/mafia-f.jpg" alt="Мафія, жіночий образ">
+                        <figcaption>Вона</figcaption>
+                    </figure>
+                </div>
+                <p data-i18n="mafia_desc">Вночі обирає жертву. Мета: знищити мирних.</p>
+            </div>
+            <div class="card">
+                <h3 data-i18n="peaceful_name">Мирний житель</h3>
+                 <div class="pair">
+                     <figure>
+                        <img src="images/peaceful-m.jpg" alt="Мирний житель, чоловічий образ">
+                        <figcaption>Він</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/peaceful-f.jpg" alt="Мирний житель, жіночий образ">
+                        <figcaption>Вона</figcaption>
+                    </figure>
+                </div>
+                <p data-i18n="peaceful_desc">Шукає мафію голосуванням вдень.</p>
+            </div>
+            <div class="card">
+                <h3 data-i18n="doctor_name">Лікар</h3>
+                <div class="pair">
+                     <figure>
+                        <img src="images/doctor-m.jpg" alt="Лікар, чоловічий образ">
+                        <figcaption>Він</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/doctor-f.jpg" alt="Лікар, жіночий образ">
+                        <figcaption>Вона</figcaption>
+                    </figure>
+                </div>
+                <p data-i18n="doctor_desc">Щоночі рятує одного гравця.</p>
+            </div>
+            <div class="card">
+                <h3 data-i18n="cop_name">Комісар</h3>
+                 <div class="pair">
+                     <figure>
+                        <img src="images/cop-m.jpg" alt="Комісар, чоловічий образ">
+                        <figcaption>Він</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/cop-f.jpg" alt="Комісар, жіночий образ">
+                        <figcaption>Вона</figcaption>
+                    </figure>
+                </div>
+                <p data-i18n="cop_desc">Перевіряє, чи є гравець мафією.</p>
+            </div>
+             <div class="card">
+                <h3 data-i18n="tempter_name">Спокусник</h3>
+                 <div class="pair">
+                     <figure>
+                        <img src="images/tempter-m.jpg" alt="Спокусник , чоловічий образ">
+                        <figcaption>Він</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/tempter-f.jpg" alt="Спокусник, жіночий образ">
+                        <figcaption>Вона</figcaption>
+                    </figure>
+                </div>
+                <p data-i18n="tempter_desc">Спокушає гравця, блокуючи його здібності.</p>
+            </div> <div class="card">
+                <h3 data-i18n="hitman_name">Кіллер</h3>
+                 <div class="pair">
+                     <figure>
+                        <img src="images/hitman-m.jpg" alt="Кіллер, чоловічий образ">
+                        <figcaption>Він</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/hitman-f.jpg" alt="Кіллер, жіночий образ">
+                        <figcaption>Вона</figcaption>
+                    </figure>
+                </div>
+                <p data-i18n="hitman_desc">Щоночі вбиває обрану жертву. Мета: усунути усіх залишитися єдиним вижившим.</p>
+                </div>
+            </div>
+        <!--</section>
+                <section class="block">
+            <h2 data-i18n="gallery_title">Скріншоти</h2>
+            <div class="gallery">
+                <img src="images/screen1.jpg" alt="Скріншот гри 1">
+                <img src="images/screen2.jpg" alt="Скріншот гри 2">
+                <img src="images/screen3.jpg" alt="Скріншот гри 3">
+            </div>
+        </section> -->
+    </main>
+    <footer>
+        <p data-i18n="footer_text">© 2026 Мафія: Ігри Дорослих. Усі права захищено.</p>
+        <p data-i18n="age_note">18+ Гра містить жарти для дорослих і натяки. Відвертих сцен немає.</p>
+    </footer>
+
+    <button data-i18n="nav_download">Завантажити гру</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

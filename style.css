@@ -1,0 +1,228 @@
+body {
+    background-color: black;
+    color: white;
+    padding-bottom: 100px; /* место под фиксированную кнопку */
+}
+
+nav {
+    background-color: #22222279;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.logo {
+    width: 64px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    padding: 5px;
+    font-size: 20px;
+    display: inline-block;
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+h1 {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-shadow: 4px 3px 5px rgb(243, 0, 0);
+}
+
+p {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-shadow: 4px 3px 5px rgb(243, 0, 0);
+}
+
+button {
+    background-color: brown;
+    color: wheat;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.5s ease,
+                box-shadow 0.3s ease,
+                transform 0.3s ease;
+}
+
+button:hover {
+    background-color: darkred;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(251, 255, 0);
+    transform: translateX(-50%) translateY(-5px) scale(1.1);
+}
+.hero {
+    background-image: url("game.jpg");
+    background-size: cover;
+    background-position: center 50px;
+    background-repeat: no-repeat;
+    min-height: calc(40vw + 180px);
+    padding-top: 20px;
+}
+
+.block {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 3px 5px rgb(243, 0, 0);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border: 1px solid darkred;
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(243, 0, 0, 0.5);
+}
+
+.card h3 {
+    color: red;
+    text-align: center;
+    margin-top: 0;
+}
+.pair {
+    display: flex;
+    gap: 10px;
+}
+
+.pair figure {
+    margin: 0;
+    flex: 1;
+}
+
+.pair img {
+    width: 100%;
+    aspect-ratio: 2/ 3;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    color: wheat;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.lang-select {
+    margin-left: auto;
+    background-color: #222;
+    color: white;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.lang-select:hover {
+    border-color: red;
+    box-shadow: 0 0 10px rgba(243, 0, 0, 0.5);
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 1px solid darkred;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 20px rgba(243, 0, 0, 0.5);
+}
+
+footer {
+    border-top: 1px solid darkred;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #111;
+}
+
+footer p {
+    font-size: 16px;
+    text-shadow: none;
+    color: #aaa;
+}
+
+/* Адаптация под телефон: правила работают, только если экран уже 700px */
+@media (max-width: 700px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    a {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
