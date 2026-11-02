@@ -226,3 +226,54 @@ footer p {
         font-size: 18px;
     }
 }
+.gallery img {
+    cursor: zoom-in;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: zoom-out;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+/* Плашка: игра в разработке */
+.dev-notice {
+    max-width: 700px;
+    margin: 20px auto 30px;
+    padding: 15px 20px;
+    border: 1px solid #e0a800;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffd966;
+    font-size: 18px;
+    text-shadow: none;
+}
+
+/* Неактивная кнопка «Скоро» */
+button:disabled {
+    background-color: #555;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+button:disabled:hover {
+    background-color: #555;
+    box-shadow: none;
+    transform: translateX(-50%);
+    cursor: not-allowed;
+}
