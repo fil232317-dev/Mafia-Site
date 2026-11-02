@@ -277,3 +277,20 @@ button:disabled:hover {
     transform: translateX(-50%);
     cursor: not-allowed;
 }
+
+/* Телефон: текст зверху, картинка героїв повністю під ним */
+@media (max-width: 700px) {
+    .hero {
+        background-color: black;
+        background-size: 100% auto;       /* вся ширина, без обрізання */
+        background-position: center bottom;
+        min-height: 0;
+        padding: 10px 10px 70vw;          /* місце під картинку; підлаштуй 70vw */
+    }
+
+    .dev-notice {
+        margin: 10px 15px 25px;
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+}
