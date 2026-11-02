@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новини — Мафія: Ігри Дорослих</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <nav>
+        <img src="logo.jpg" alt="Логотип гри" class="logo">
+        <div class="nav-links">
+            <a href="index.html" data-i18n="nav_home">Головна</a>
+            <a href="news.html" data-i18n="nav_news">Новини</a>
+        </div>
+
+        <select id="lang-select" class="lang-select" aria-label="Language">
+            <option value="uk">Українська</option>
+            <option value="en">English</option>
+            <option value="pl">Polski</option>
+            <option value="de">Deutsch</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="it">Italiano</option>
+        </select>
+    </nav>
+
+    <main>
+        <section class="block">
+            <h2 data-i18n="news_title">Новини</h2>
+
+            <p class="dev-notice" data-i18n="dev_notice">Гра перебуває в розробці. Доступу до неї поки що немає.</p>
+
+            <div class="cards">
+                <article class="card">
+                    <time class="news-date" datetime="2026-11-02">02.11.2026</time>
+                    <h3 data-i18n="news_1_title">Вхід у гру</h3>
+                    <p data-i18n="news_1_text">Ми зробили вхід в акаунт. Гра ще в розробці, тому доступу до неї поки що немає.</p>
+                </article>
+
+                <article class="card">
+                    <time class="news-date" datetime="2026-11-02">02.11.2026</time>
+                    <h3 data-i18n="news_2_title">Магазин у грі</h3>
+                    <p data-i18n="news_2_text">Ми додали в гру магазин. Він ще в розробці й поки недоступний для гравців.</p>
+                </article>
+
+                <article class="card">
+                    <time class="news-date" datetime="2026-11-02">02.11.2026</time>
+                    <h3 data-i18n="news_3_title">Ігровий процес</h3>
+                    <p data-i18n="news_3_text">Основний ігровий процес уже зроблено: кімнати, ролі та голосування. Скоро розповімо більше.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-i18n="footer_text">© 2026 Мафія: Ігри Дорослих. Усі права захищено.</p>
+        <p data-i18n="age_note">18+ Гра містить жарти для дорослих і натяки. Відвертих сцен немає.</p>
+    </footer>
+
+    <button class="soon-btn" disabled data-i18n="coming_soon">Скоро</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
