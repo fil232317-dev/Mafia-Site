@@ -1,0 +1,9 @@
+/* Стили страницы новостей (основные стили берутся из style.css) */
+
+.news-date {
+    display: block;
+    text-align: center;
+    color: wheat;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
