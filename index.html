@@ -11,8 +11,7 @@
         <img src="logo.jpg" alt="Логотип гри" class="logo">
         <div class="nav-links">
             <a href="#" data-i18n="nav_home">Головна</a>
-            <a href="#" data-i18n="nav_news">Новини</a>
-            <a href="#" data-i18n="nav_download">Завантажити гру</a>
+            <a href="news.html" data-i18n="nav_news">Новини</a>
         </div>
 
         <select id="lang-select" class="lang-select" aria-label="Language">
@@ -34,9 +33,10 @@
         </header>
 
         <section class="block">
+            <p class="dev-notice" data-i18n="dev_notice">Гра перебуває в розробці. Доступу до неї поки що немає.</p>
             <h2 data-i18n="about_title">Про гру</h2>
             <p data-i18n="about_text">Мафія: Ігри Дорослих — онлайн-мафія, де кожна ніч може стати останньою. Місто засинає. Прокидається мафія.</p>
-            <p data-i18n="adout_text_1">Багатокористувацька мафія для телефона та комп'ютера. Створіть кімнату, покличте друзів або знайдіть партію в лобі, і нехай переможе наймудріший. Або найчесніший.</p>
+            <p data-i18n="about_text_1">Багатокористувацька мафія для телефона та комп'ютера. Створіть кімнату, покличте друзів або знайдіть партію в лобі, і нехай переможе наймудріший. Або найчесніший.</p>
         </section>
         <section class="block">
             <h2 data-i18n="about_title_1">Як минає партія</h2>
@@ -132,22 +132,28 @@
                 <p data-i18n="hitman_desc">Щоночі вбиває обрану жертву. Мета: усунути усіх залишитися єдиним вижившим.</p>
                 </div>
             </div>
-        <!--</section>
+            </section>
                 <section class="block">
             <h2 data-i18n="gallery_title">Скріншоти</h2>
             <div class="gallery">
-                <img src="images/screen1.jpg" alt="Скріншот гри 1">
-                <img src="images/screen2.jpg" alt="Скріншот гри 2">
-                <img src="images/screen3.jpg" alt="Скріншот гри 3">
+                <img src="images/screen1.png" alt="Скріншот гри 1">
+                <img src="images/screen2.png" alt="Скріншот гри 2">
+                <img src="images/screen3.png" alt="Скріншот гри 3">
+                <img src="images/screen4.png" alt="Скріншот гри 4">
+                <img src="images/screen5.png" alt="Скріншот гри 5">
+                <img src="images/screen6.png" alt="Скріншот гри 6">
             </div>
-        </section> -->
+            <div class="lightbox" id="lightbox">
+                 <img src="" alt="" id="lightbox-img">
+            </div>
+        </section>
     </main>
     <footer>
         <p data-i18n="footer_text">© 2026 Мафія: Ігри Дорослих. Усі права захищено.</p>
         <p data-i18n="age_note">18+ Гра містить жарти для дорослих і натяки. Відвертих сцен немає.</p>
     </footer>
 
-    <button data-i18n="nav_download">Завантажити гру</button>
+    <button class="soon-btn" disabled data-i18n="coming_soon">Скоро</button>
 
     <script src="script.js"></script>
 </body>
