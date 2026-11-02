@@ -103,7 +103,7 @@ h2 {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
     gap: 20px;
 }
 
@@ -292,5 +292,20 @@ button:disabled:hover {
         margin: 10px 15px 25px;
         font-size: 16px;
         padding: 12px 15px;
+    }
+}
+
+/* Телефон: нічого не повинно виходити за межі екрана */
+@media (max-width: 700px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .block {
+        padding: 30px 12px;
+    }
+
+    .card {
+        padding: 15px;
     }
 }
